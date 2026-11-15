@@ -1,0 +1,41 @@
+{
+  "name": "appledouble-cleaner",
+  "displayName": "AppleDouble Cleaner",
+  "description": "Automatically moves paired macOS AppleDouble sidecar files to Trash.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:appledoubleCleaner.cleanNow"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "appledoubleCleaner.cleanNow",
+        "title": "AppleDouble Cleaner: Clean Sidecars Now"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "test": "npm run compile && node --test test/*.test.mjs",
+    "vscode:prepublish": "npm run compile"
+  },
+  "dependencies": {
+    "trash": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/vscode": "^1.105.0",
+    "typescript": "^5.9.3"
+  }
+}
