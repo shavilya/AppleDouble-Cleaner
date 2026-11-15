@@ -3,8 +3,16 @@
   "displayName": "AppleDouble Cleaner",
   "description": "Automatically moves paired macOS AppleDouble sidecar files to Trash.",
   "version": "0.0.1",
-  "publisher": "local",
+  "publisher": "ShavilyaRajput",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shavilya/AppleDouble-Cleaner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shavilya/AppleDouble-Cleaner/issues"
+  },
+  "homepage": "https://github.com/shavilya/AppleDouble-Cleaner#readme",
   "type": "module",
   "engines": {
     "vscode": "^1.85.0"
@@ -35,7 +43,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
-    "@types/vscode": "^1.105.0",
+    "@types/vscode": "1.85.0",
     "typescript": "^5.9.3"
   }
 }
